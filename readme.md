@@ -1,0 +1,1 @@
+Веб-приложение для цифрового учета книг с использованием следующих инструментов и технологий Java: Maven, Spring Core, Spring MVC, JDBCTemplate, Java 8 Stream API, Spring Boot, Hibernate и хранением в базе данных PostgreSQL
