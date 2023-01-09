@@ -3,6 +3,7 @@ package project.DigitalLibraryRecording_.models;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 
 import java.util.List;
@@ -16,11 +17,12 @@ public class Person {
     private int person_id;
 
     @Column(name = "name")
-    @NotNull(message = "ФИО не должно быть пустым")
+    @NotEmpty(message = "ФИО не должно быть пустым")
     private String name;
 
     @Column(name = "age")
     @Min(value = 0, message = "Возраст должен быть действительным")
+    @NotNull(message = "Поле возраст не должно быть пустым")
     private int age;
 
     @OneToMany(mappedBy = "owner")

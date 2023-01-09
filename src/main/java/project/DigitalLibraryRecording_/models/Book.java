@@ -3,6 +3,7 @@ package project.DigitalLibraryRecording_.models;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 
 
@@ -24,7 +25,7 @@ public class Book {
     private String author;
 
     @Column(name = "year")
-    @NotNull(message = "Год издания книги должен быть действительным")
+    @NotNull(message = "Данное поле не должно быть пустым")
     @Min(value = 0, message = "Год издания книги должен быть действительным")
     @Max(value = 2022, message = "Год издания книги должен быть действительным")
     private int year;

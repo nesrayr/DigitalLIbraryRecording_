@@ -98,7 +98,7 @@ div.buttons{
     justify-content: space-between;
 }
 div.buttonsFree{
-    margin-left: 235px;
+    margin-left: 200px;
     width: 80%;
     margin-top: 80px;
     display: flex;
@@ -149,10 +149,13 @@ select{
     width: 100px;
     height: 25px;
     background-color: rgb(31, 31, 31);;
+    color: wheat;
+
 }
 option{
     width: 100px;
     height: 25px;
     background-color: rgb(31, 31, 31);
     font-style: italic;
+    color: wheat;
 }
