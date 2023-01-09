@@ -20,7 +20,7 @@
         </h1>
 
         <div class="empty" th:if="${books.isEmpty()}">
-            <span>Участник пока не взял ни одной книги </span>
+            <span>Читатель пока не взял ни одной книги </span>
             <div class="buttons">
                 <form th:method="GET" th:action="@{/people/{id}/edit(id=${person.getPerson_id()})}">
                     <input type="submit" value="Редактировать"/>

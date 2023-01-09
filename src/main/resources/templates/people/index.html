@@ -19,11 +19,11 @@
         <div th:each="person : ${people}">
             <a class="list" th:href="@{/people/{id}(id=${person.getPerson_id()})}"
             th:text="${person.getName() + ', ' + person.getAge()}">
-                <span class="clear">Список участников пуст</span>
+                <span class="clear">Список читателей пуст</span>
             </a>
         </div>
         <a href="/people/new">
-            <div class="addNew">Добавить участника</div>
+            <div class="addNew">Добавить читателя</div>
         </a>
     </div>
 </body>

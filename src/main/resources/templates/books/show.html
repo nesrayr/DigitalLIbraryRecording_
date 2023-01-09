@@ -22,7 +22,7 @@
     </h1>
 
     <div class="private" th:if="${owner}">
-        <span>На данный момент книга находится у следующего участника:</span>
+        <span>На данный момент книга находится у следующего читателя:</span>
         <span class="owner" th:text="${owner.getName()}">&nbsp&nbsp -- Person name</span>
 
         <div class="buttons">
@@ -41,7 +41,7 @@
     <div class="free" th:if="${people}">
         <span>Эта книга свободна. Кому ее назначить?</span>
         <form th:method="PATCH" th:action="@{/books/{id}/assign(id=${book.getBook_id()})}">
-            <label for="person">&nbsp - Выберите участника: </label>
+            <label for="person">&nbsp - Выберите читателя: </label>
             <select th:object="${person}" th:field="*{person_id}" id="person">
                 <option th:each="person:${people}" th:value="${person.getPerson_id()}" th:text="${person.getName()}">
                 </option>
