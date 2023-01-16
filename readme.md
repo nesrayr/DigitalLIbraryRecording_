@@ -37,6 +37,6 @@
 
 ![img_6.png](images/img_6.png)
 
-### Добавление читателя
+### Добавление читателя 
 
 ![img_7.png](images/img_7.png)
